@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1536618829 source:c:\users\alumno\desktop\repo\functions-in-c\functionsbiblo\functionsforprojects.c
+	<stdio.h>
+
+1536618915 source:c:\users\alumno\desktop\repo\functions-in-c\functionsbiblo\main.c
+	<stdio.h>
+	<stdlib.h>
+
