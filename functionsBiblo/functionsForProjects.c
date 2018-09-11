@@ -28,3 +28,24 @@ void printArray(int arr[], int size)
         printf("%d ", arr[i]);
     printf("\n");
 }
+int getInt(int *pInt,char msg[], char msgError[], int min, int max, int reintentos) {
+    int returnNum=-1;
+    int bufferInt=0;
+    if(pInt != NULL && msg != NULL && msgError != NULL && min<=max && reintentos>=0) {
+        do{
+            reintentos--;
+            printf("%s", msg);
+            if(scanf("%d", &bufferInt) == 1){
+                if (bufferInt>=min && bufferInt<=max){
+
+                }
+            }
+
+
+        }while(reintentos>0);
+
+    }
+
+
+    return 0;
+}
