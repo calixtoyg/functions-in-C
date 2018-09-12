@@ -7,6 +7,19 @@ static int getI(int* pBuffer){
     return scanf("%d",pBuffer);
 
 }
+static char getC(char* pBuffer){
+
+    return scanf("%c", pBuffer);
+
+
+}
+
+static float getF(float* pBuffer){
+
+    return scanf("%f",pBuffer);
+
+}
+
 void swap(int *xp, int *yp)
 {
     int temp = *xp;
@@ -44,6 +57,62 @@ int getEntero(int *pInt,char msg[], char msgError[], int min, int max, int reint
             fflush(stdin);
             if(getI(&bufferInt)&& bufferInt>=min && bufferInt<=max){
                 *pInt = bufferInt;
+                returnNum = 0;
+                break;
+
+            }else{
+                printf("%s", msgError);
+
+            }
+
+
+        }while(reintentos>0);
+
+    }
+    return returnNum;
+
+
+}
+
+int getFloat(float *pFloat,char msg[], char msgError[], int min, int max, int reintentos) {
+    int returnNum=-1;
+    float bufferFloat=0;
+    if(pFloat != NULL && msg != NULL && msgError != NULL && min<=max && reintentos>=0) {
+        do{
+            reintentos--;
+            printf("%s", msg);
+            fflush(stdin);
+            if(getF(&bufferFloat)&& bufferFloat>=min && bufferFloat<=max){
+
+                *pFloat = bufferFloat;
+                returnNum = 0;
+                break;
+
+            }else{
+                printf("%s", msgError);
+
+            }
+
+
+        }while(reintentos>0);
+
+    }
+    return returnNum;
+
+
+}
+int getChar(char *pChar,char msg[], char msgError[], char minChar, char maxChar, int reintentos) {
+    int returnNum=-1;
+    char bufferChar;
+    if(pChar != NULL && msg != NULL && msgError != NULL && minChar<=maxChar && reintentos>=0) {
+        do{
+            reintentos--;
+            printf("%s", msg);
+            fflush(stdin);
+            printf("Paso por aca \n");
+            if(getC(&bufferChar)&& bufferChar>=minChar && bufferChar<=maxChar){
+
+                *pChar = bufferChar;
                 returnNum = 0;
                 break;
 

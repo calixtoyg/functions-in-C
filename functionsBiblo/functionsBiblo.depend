@@ -6,13 +6,15 @@
 	<stdio.h>
 	<stdlib.h>
 
-1536707317 source:c:\users\alumno\desktop\f\functions-in-c\functionsbiblo\main.c
+1536710959 source:c:\users\alumno\desktop\f\functions-in-c\functionsbiblo\main.c
 	<stdio.h>
 	<stdlib.h>
 	"functionsForProjects.h"
 
-1536707294 source:c:\users\alumno\desktop\f\functions-in-c\functionsbiblo\functionsforprojects.c
+1536711380 source:c:\users\alumno\desktop\f\functions-in-c\functionsbiblo\functionsforprojects.c
 	<stdio.h>
+	<stdlib.h>
+	"functionsForProjects.h"
 
-1536706729 c:\users\alumno\desktop\f\functions-in-c\functionsbiblo\functionsforprojects.h
+1536711380 c:\users\alumno\desktop\f\functions-in-c\functionsbiblo\functionsforprojects.h
 
