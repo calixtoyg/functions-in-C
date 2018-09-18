@@ -109,7 +109,6 @@ int getChar(char *pChar,char msg[], char msgError[], char minChar, char maxChar,
             reintentos--;
             printf("%s", msg);
             fflush(stdin);
-            printf("Paso por aca \n");
             if(getC(&bufferChar)&& bufferChar>=minChar && bufferChar<=maxChar){
 
                 *pChar = bufferChar;
